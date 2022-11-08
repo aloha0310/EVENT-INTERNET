@@ -24,3 +24,32 @@ $('form').submit(function (e) {
     });
     return false;
 });
+
+//карусель
+//$('.carousel__inner').slick({
+//    speed: 1200,
+//    //adaptiveHeight: true,
+//    prevArrow: '<button type="button" class="slick-prev"><img src="src/icon/left.png"></button>',
+//    nextArrow: '<button type="button" class="slick-next"><img src="src/icon/right.png"></button>',
+//    responsive: [
+//        {
+//            breakpoint: 991,
+//            settings: {
+//                dots: true,
+//                arrows: false
+//            }
+//        }
+//    ]
+//});
+
+$(document).ready(function () {
+    $('.carousel__inner').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        speed: 1200,
+        prevArrow: '<button type="button" class="slick-prev"><img src="src/icon/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="src/icon/right.png"></button>'
+
+    });
+});
